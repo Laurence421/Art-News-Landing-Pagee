@@ -13,3 +13,8 @@
 *   **Mobile Layout**: Default styling for compact screens.
 *   **Tablet Layout (`@media (min-width: 768px)`)**: Optimized for mid-sized viewports.
 *   **Desktop Layout (`@media (min-width: 1024px)`)**: Expands to full-width desktop monitors.
+
+## 🎯 Credits & Inspiration
+*Layout design credit: https://www.figma.com/proto/MMCrtbP0JvruWh6UZKsQJv/Responsive-Design-Art-News-Landing-Page--Community-?node-id=1-5
+*
+*   *Note: This project is a front-end cloning practice to improve my HTML, CSS, and JavaScript skills.*
