@@ -34,6 +34,8 @@
         align-items: stretch;
         background-color: #ffffff;
         width: 100%;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
         padding: 10px;
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
@@ -52,13 +54,19 @@
         color: #bd6022;
         border: none;
     }
-    .float li:hover{
+    .float li:active{
         background-color: #f5d9ba;
     }
-    .float li:hover a,
-    .float li:hover span{
-        color: #5a2b05;
-        text-decoration: none;
+    /* Only show hover on devices with a mouse, so it doesn't stick after a tap */
+    @media (hover: hover) {
+        .float li:hover{
+            background-color: #f5d9ba;
+        }
+        .float li:hover a,
+        .float li:hover span{
+            color: #5a2b05;
+            text-decoration: none;
+        }
     }
     .bacground1{
         background-image: url(../image/tabletbg.png);

@@ -8,6 +8,11 @@ document.addEventListener('click', (event) => {
   }
 });
 
+// Close the menu after choosing a link
+navLinks.querySelectorAll('li').forEach((item) => {
+  item.addEventListener('click', () => setMenuOpen(false));
+});
+
 // Close the menu with the Escape key
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
