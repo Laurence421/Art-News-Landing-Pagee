@@ -4,6 +4,13 @@ document.addEventListener('click', (event) => {
 
   // If the menu is open AND the click wasn't on the menu or burger icon
   if (navLinks.classList.contains('active') && !isClickInsideMenu && !isClickOnBurger) {
-    navLinks.classList.remove('active');
+    setMenuOpen(false);
+  }
+});
+
+// Close the menu with the Escape key
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    setMenuOpen(false);
   }
 });

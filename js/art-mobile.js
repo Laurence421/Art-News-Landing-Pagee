@@ -1,22 +1,23 @@
 const navLinks = document.getElementById('mymenu');
 const burger = document.getElementById('burger');
+
+function setMenuOpen(open) {
+  navLinks.classList.toggle('active', open);
+  burger.setAttribute('aria-expanded', open);
+}
+
 function handleNavigation() {
   const width = window.innerWidth;
 
-  if (width <= 925) {
-    // Switch to Burger Mode
-    navLinks.classList.add('mobile-mode');
-    burger.style.display = 'block';
-  } else {
+  if (width > 925) {
     // Back to Normal Design
-    navLinks.classList.remove('mobile-mode', 'active');
-    burger.style.display = 'none';
+    setMenuOpen(false);
   }
 }
 
 // Toggle menu visibility when clicking the burger
 burger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  setMenuOpen(!navLinks.classList.contains('active'));
 });
 
 // Listen for resize events

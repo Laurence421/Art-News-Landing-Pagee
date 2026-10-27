@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ARTJUNKS - a responsive art news landing page. Learn, buy and trade art pieces using crypto currencies.">
     <title>ART NEWS LANDING PAGE</title>
     <link rel="stylesheet" href="./css/component.css">
     <link rel="stylesheet" href="./css/desktop.css">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
 </head>
-<body >
+<body>
     <nav>
         <h1>ARTJUNKS</h1>
         <section id="mymenu" class="navlink">
@@ -24,16 +25,18 @@
                 <li><span>Get started</span></li>
             </ul>
         </section>
-        <i class="uil uil-bars" id="burger"></i>  
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-controls="mymenu" aria-expanded="false">
+            <i class="uil uil-bars"></i>
+        </button>
     </nav>
-    <section class="bacground1" >
+    <section class="bacground1">
         <section class="txt-box">
             <section class="tittle">
-                <span> <hr></span>
+                <span><hr></span>
                 <h1>Art pieces made easy accessible for everyone</h1>
             </section>
             <section class="tittle-content">
-                <p>Learn, buy and trade art pieces of your favorite artist around the world 
+                <p>Learn, buy and trade art pieces of your favorite artist around the world
                     by using crypto currencies.</p>
             </section>
             <section class="tittle-btn">
@@ -41,40 +44,39 @@
             </section>
         </section>
     </section>
-    <main >
+    <main>
         <h1 class="tablet-label">Newest reads</h1>
         <section class="card-table">
-            <h1 class="mobile-label">Newest reads</h1>
             <section class="card">
-                <img src="./image/card1-mobile.png">
+                <img src="./image/card1-mobile.png" alt="Painting of a castle on a hill">
                 <section class="card-info">
                     <p class="date">5 August, 2022</p>
-                    <p class="context">France seeks to protect Russia's Morozov collection from seizure as 
+                    <p class="context">France seeks to protect Russia's Morozov collection from seizure as
                     masterpieces return home</p>
                     <a class="read-btn" id="r1" href="#">Read more -></a>
                 </section>
             </section>
             <section class="card">
-                <img src="./image/card2-mobile.png">
+                <img src="./image/card2-mobile.png" alt="Two visitors looking at a Picasso painting">
                 <section class="card-info">
                     <p class="date">5 August, 2022</p>
-                    <p class="context">Picasso’s muse as sea creature—will it break $100m at 
+                    <p class="context">Picasso’s muse as sea creature—will it break $100m at
                     Sotheby's New York sale?</p>
                     <a class="read-btn" id="r2" href="#">Read more -></a>
                 </section>
             </section>
             <section class="card">
-                <img src="./image/card3-mobile.png">
+                <img src="./image/card3-mobile.png" alt="Concrete pavilion at the Venice Biennale">
                 <section class="card-info">
                     <p class="date">5 August, 2022</p>
-                    <p class="context">Venice Biennale 2022: 
+                    <p class="context">Venice Biennale 2022:
                         all the national pavilions, artists and curators</p>
                     <a class="read-btn" id="r3" href="#">Read more -></a>
                 </section>
             </section>
         </section>
     </main>
+    <script src="./js/art-mobile.js"></script>
+    <script src="./js/art-toggle.js"></script>
 </body>
-<script src="./js/art-mobile.js"></script>
-<script src="./js/art-toggle.js"></script>
 </html>

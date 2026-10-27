@@ -1,15 +1,23 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 nav h1{
     color: #fff;
     font-weight: 1000;
-}
-nav{
-    grid-row: 1/2;
-    grid-column: 1/2;
 }
 nav ul {
     display: flex;
@@ -18,5 +26,11 @@ nav ul {
 }
 nav ul li a{
     text-decoration: none;
-    
+}
+.burger{
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
 }
