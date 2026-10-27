@@ -4,6 +4,8 @@ A responsive landing page for **ARTJUNKS**, a fictional platform where people ca
 
 Built from a Figma community design using only **HTML, CSS and vanilla JavaScript**, with no frameworks.
 
+🔗 **Live demo:** [laurence421.github.io/Art-News-Landing-Pagee](https://laurence421.github.io/Art-News-Landing-Pagee/)
+
 ## 📸 Screenshots
 
 ### Desktop (1440px)
